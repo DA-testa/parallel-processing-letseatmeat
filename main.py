@@ -8,7 +8,7 @@ def parallel_processing(n, m, data):
     finish_time = [0] * n
     for i in range(m):
         next_thread = finish_time.index(min(finish_time))
-        output.append((next_thread, finish_time[next_thread])
+        output.append((next_thread, finish_time[next_thread]))
         finish_time[next_thread] += data[i]
     return output
 
